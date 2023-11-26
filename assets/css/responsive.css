@@ -1,0 +1,191 @@
+/* XL Device :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1449px) {}
+
+
+/* LG Device :992px. */
+
+@media (max-width: 1200px) {
+    .section__title {
+        font-size: 40px;
+    }
+    .section__title.lg {
+        font-size: 55px;
+    }
+    .menu__area {
+        gap: 40px;
+    }
+    .menu__area .menu .menu__wrapper {
+        gap: 25px;
+    }
+    .logo .logo__img {
+        width: 150px;
+    }
+    .header__wrapper .header__contact {
+        gap: 18px;
+    }
+    .price__card--content .price__card--title {
+        font-size: 24px;
+    }
+    .gallery__wrapper .gallery__slide {
+        width: 320px;
+        height: 320px;
+    }
+    .contact__wrapper .contact__map {
+        padding-right: 100px;
+    }
+    
+}
+
+
+/* MD Device :768px. */
+
+@media (max-width: 991px) {
+    .section__title {
+        font-size: 35px;
+    }
+    .section__title.lg {
+        font-size: 45px;
+    }
+    .gallery__area {
+        padding-bottom: 90px;
+    }
+    .about__wrapper .about__content .about__content--text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .about__area .about__wrapper {
+        gap: 40px;
+    }
+    .about__wrapper .about__content .about__content--btn {
+        margin-top: 30px;
+    }
+    .about__area {
+        padding-bottom: 100px;
+    }
+    .contact__area .contact__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .contact__wrapper .contact__map {
+        padding-right: 0px;
+        height: 400px !important;
+    }
+    .contact__form {
+        margin-top: 50px;
+    }
+    .contact__wrapper .contact__form .contact__form--title {
+        margin-bottom: 65px;
+    }
+}
+
+
+/* SM Small Device :320px. */
+
+@media (max-width: 767px) {
+    .section__title.lg {
+        font-size: 36px;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    .hero__area {
+        padding: 50px 0px 70px 0px;
+    }
+    .hero__area .hero__area--title p {
+        margin-bottom: 50px;
+    }
+    .price__area .swiper-button-next, .price__area .swiper-button-prev {
+        top: 25px;
+        height: 35px;
+        width: 35px;
+    }
+    .price__area {
+        padding-bottom: 70px;
+    }
+    .price__area .swiper-button-prev {
+        left: auto;
+        right: 55px;
+    }
+    .gallery__area .gallery__area--title {
+        margin-bottom: 40px;
+    }
+    .gallery__wrapper .gallery__slide {
+        width: 280px;
+        height: 280px;
+    }
+    .gallery__area {
+        padding-bottom: 70px;
+    }
+    .about__thumb {
+        margin-top: 30px;
+    }
+    .contact__wrapper .contact__form .contact__form--title {
+        margin-bottom: 52px;
+    }
+    .footer__area {
+        padding: 55px 0px 40px 0px;
+    }
+}
+
+
+/* SM Small Device :550px. */
+
+@media (max-width: 575px) {
+    .section__title.lg {
+        font-size: 30px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    .theme__btn {
+        padding: 8px 16px;
+        font-size: 12px;
+        gap: 8px;
+    }
+    .logo .logo__img {
+        width: 140px;
+    }
+    .header__wrapper .header__contact {
+        gap: 12px;
+    }
+    .menu__open, .menu__close {
+        font-size: 20px;
+    }
+    .hero__area {
+        padding: 35px 0px 60px 0px;
+    }
+    .hero__area .hero__area--title h1 {
+        margin-bottom: 18px;
+    }
+    .hero__area .hero__area--title p {
+        margin-bottom: 35px;
+    }
+    .price__area {
+        padding-bottom: 60px;
+    }
+    .gallery__area {
+        padding-bottom: 60px;
+    }
+    .about__area {
+        padding-bottom: 70px;
+    }
+    .contact__wrapper .contact__map {
+        height: 300px !important;
+    }
+    .contact__form {
+        margin-top: 40px;
+    }
+    .contact__wrapper .contact__form .contact__form--title {
+        margin-bottom: 40px;
+    }
+    .contact__wrapper .contact__form .contact__info {
+        gap: 0px;
+        grid-template-columns: 1fr;
+    }
+    .contact__wrapper .contact__form .input__block {
+        margin-bottom: 36px;
+    }
+    .footer__wrapper {
+        gap: 20px;
+    }
+}

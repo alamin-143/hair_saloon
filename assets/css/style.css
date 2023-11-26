@@ -1,0 +1,460 @@
+/* Base CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font family  */
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('../fonts/IvyMode-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('../fonts/IvyMode-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('../fonts/IvyMode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('../fonts/IvyMode-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* colors */
+:root {
+    --primary__color: #EBBAA5;
+    --gray__color: #AAAAAA;
+    --white__color: #FFFFFF;
+    --bg__color: #020B18;
+    --black__color: #000000;
+    --dark__color: #040E1E;
+}
+
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #07171D;
+}
+
+body {
+    background-color: var(--bg__color);
+    font-weight: 400;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section__title {
+    color: var(--white__color);
+    font-family: 'Ivy Mode';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+.section__title.lg {
+    font-size: 64px;
+    letter-spacing: 1.28px;
+}
+.theme__btn {
+    color: var(--black__color);
+    padding: 12px 24px; 
+    background-color: var(--primary__color);
+    font-family: 'Open Sauce One';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.28px;
+    gap: 12px;
+    transition: all .3s;
+    border: 1px solid var(--primary__color);
+}
+.theme__btn:hover {
+    background-color: var(--dark__color);
+    color: var(--primary__color);
+}
+.para__style {
+    color: var(--gray__color);
+    font-family: 'Open Sauce One';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* header area start here */
+.header__wrapper {
+    padding: 32px 0px;
+  }
+.menu__area {
+    gap: 60px;
+}
+.logo .logo__img {
+    width: 164px;
+    height: 30px;
+}
+.menu__area .menu .menu__wrapper {
+    gap: 45px;
+}
+.menu .menu__wrapper .menu__link {
+    font-family: 'Open Sauce One';
+    transition: all .3s;
+}
+.menu .menu__wrapper .menu__link:hover {
+    color: var(--primary__color) !important;
+}
+.header__wrapper .header__contact {
+	gap: 24px;
+}
+.header__contact .contact__info {
+    gap: 8px;
+}
+.contact__info .contact__info--link {
+    font-family: 'Open Sauce One';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    gap: 12px;
+    transition: all .3s;
+}
+.contact__info .contact__info--link:hover {
+    color: var(--primary__color) !important;
+}
+
+/* mobile menu start */
+.menu__open, .menu__close{
+	font-size: 24px;
+	color: var(--white__color);
+	cursor: pointer;
+	transition: all .3s;
+}
+.menu__open:hover, .menu__close:hover {
+    color: var(--primary__color);
+}
+.menu__close {
+    color: var(--dark__color);
+}
+.mobile__menu__area{
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    right: 0;
+    top: 0;
+    z-index: 99;
+    visibility: hidden;
+    transition: all .4s;
+}
+.mobile__menu__area.active {
+    width: 100%;
+    visibility: visible;
+}
+.mobile__menu{
+    height: 100vh;
+    width: 0px;
+	padding: 30px;
+	background: var(--white__color);
+    transition: all .4s;
+}
+.mobile__menu.active {
+    width: 280px;
+    visibility: visible;
+}
+.mobile__menu .menu__wrapper{
+	gap: 18px;
+	margin-top: 40px;
+}
+.mobile__menu .menu__wrapper .menu__link {
+	font-family: 'Open Sauce One';
+	transition: all .3s;
+	color: var(--dark__color) !important;
+}
+.mobile__menu .contact__info {
+    margin-top: 30px;
+    gap: 15px;
+}
+.mobile__menu .contact__info .contact__info--link {
+	color: var(--dark__color);
+}
+
+/* mobile menu end */
+
+
+
+/* header area end here */
+
+/* hero area start here */
+.hero__area {
+    padding: 90px 0px 100px 0px;
+}
+.hero__area .hero__area--title h1 {
+    margin-bottom: 24px;
+} 
+.hero__area .hero__area--title p {
+    margin-bottom: 61px;
+}
+.hero__area .hero__area--thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+/* hero area end here */
+
+/* price area start here */
+.price__area {
+    padding-bottom: 100px;
+}
+.price__area .price__card {
+    transition: all .3s;
+    cursor: pointer;
+}
+.price__area .price__card:hover {
+    transform: scale(1.05);
+}
+
+.price__area .price__area--title {
+    margin-bottom: 48px;
+} 
+.price__card .price__card--img {
+    height: 235px;
+}
+.price__card .price__card--content {
+    padding: 32px 0px 37px 0px;
+    background: #1E2530;
+}
+.price__card--content .price__card--price {
+    font-weight: 600;
+    color: var(--primary__color);
+    margin-bottom: 16px;
+}
+.price__card--content .price__card--title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.56px;
+    margin-bottom: 8px;
+}
+.price__area .swiper-button-next::after,
+.price__area .swiper-button-prev::after {
+	display: none;
+}
+.price__area .swiper-button-next,
+.price__area .swiper-button-prev {
+	top: 35px;
+	background-color: var(--primary__color);
+	height: 44px;
+	width: 44px;
+	color: var(--black__color);
+    border: 1px solid var(--primary__color);
+    transition: all .3s;
+}
+.price__area .swiper-button-next:hover, 
+.price__area .swiper-button-prev:hover {
+    background-color: var(--dark__color);
+    color: var(--primary__color);
+}
+.price__area .swiper-button-prev {
+	left: auto;
+	right: 66px;
+}
+/* price area start here */
+
+/* gallery area start here */
+.gallery__area {
+    padding-bottom: 128px;
+}
+.gallery__area .gallery__area--title {
+    margin-bottom: 60px;
+}
+.gallery__wrapper .gallery__slide {
+    width: 387px;
+    height: 387px;
+    margin: 0px 4px;
+}
+/* gallery area end here */
+
+/* about area start here */
+.about__area {
+    padding-bottom: 150px;
+}
+.about__area .about__wrapper {
+    gap: 61px;
+}
+.about__wrapper .about__content {
+    flex-basis: 50%;
+}
+.about__wrapper .about__content .about__content--title {
+    margin-bottom: 16px;
+}
+.about__wrapper .about__content .about__content--text {
+    font-size: 20px;
+    line-height: 32px;
+}
+.about__wrapper .about__content .about__content--btn {
+    margin-top: 44px;
+}
+.about__wrapper .about__thumb {
+    flex-basis: 50%;
+}
+/* about area end here */
+
+/* contact area start here */
+.contact__area .contact__wrapper {
+    grid-template-columns: 1fr 1fr;
+}
+.contact__wrapper .contact__map {
+    padding-right: 142px;
+}
+.contact__wrapper .contact__map iframe {
+    width: 100%;
+    height: 100%;
+}
+.contact__wrapper .contact__form .contact__form--title {
+    margin-bottom: 88px;
+}
+.contact__wrapper .contact__form .contact__info {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.contact__wrapper .contact__form .input__block {
+    margin-bottom: 46px;
+}
+.contact__wrapper .contact__form .msg__block .input__field {
+    height: 120px;
+    resize: none;
+}
+.contact__wrapper .contact__form .input__field {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--gray__color);
+    font-family: 'Open Sauce One';
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+.contact__wrapper .contact__form .input__field::placeholder {
+    opacity: 1;
+}
+.contact__wrapper .contact__form .form__btn {
+    cursor: pointer;
+}
+.contact__wrapper .contact__form .form__btn input {
+    padding: 0 24px 0px 0px;
+    background-color: transparent;
+    border: 0;
+}
+.contact__wrapper .contact__form .form__btn:hover input {
+    color: var(--primary__color);
+}
+.contact__wrapper .contact__form .form__btn .form__btn--icon {
+	top: 50%;
+	transform: translateY(-50%);
+	right: 24px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* contact area end here */
+
+/* footer area start here */
+.footer__area {
+    padding: 74px 0px 52px 0px;
+}
+/* footer area end here */
+
